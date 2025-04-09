@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-qasly-darker text-qasly-gray border-t border-qasly-medium">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="mt-8 md:mt-0">
-          <Image src="/logo.svg" alt="Qasly Media" width={120} height={40} className="h-12 w-auto mb-4" />
+          <Image src="/logo.jpeg" alt="Qasly Media" width={60} height={60} className="h-12 w-12 mb-4 object-contain" />
           <p className="text-qasly-gray max-w-md">
             Professional media agency with over 5 years of experience in web development and video editing services.
           </p>

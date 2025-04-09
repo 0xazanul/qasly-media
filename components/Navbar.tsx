@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Qasly Media</span>
-            <Image src="/logo.svg" alt="Qasly Media" width={120} height={40} className="h-12 w-auto" priority />
+            <Image src="/logo.jpeg" alt="Qasly Media" width={60} height={60} className="h-12 w-12 object-contain" priority />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -61,7 +61,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Qasly Media</span>
-              <Image src="/logo.svg" alt="Qasly Media" width={120} height={40} className="h-12 w-auto" />
+              <Image src="/logo.jpeg" alt="Qasly Media" width={60} height={60} className="h-12 w-12 object-contain" />
             </Link>
             <button
               type="button"

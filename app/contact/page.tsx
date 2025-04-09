@@ -132,8 +132,8 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="bg-qasly-dark p-8 rounded-lg shadow-md border border-qasly-medium">
               <div className="mb-8">
-                <Image src="/logo.svg" alt="Qasly Media" width={120} height={40} className="h-12 w-auto mb-6" />
-                <p className="text-qasly-gray">
+                <h2 className="text-2xl font-medium text-qasly-offwhite mb-4 text-center">About Us</h2>
+                <p className="text-qasly-gray text-center">
                   Professional media agency with over 5 years of experience in web development and video editing services.
                 </p>
               </div>
@@ -181,7 +181,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-base font-medium text-qasly-offwhite">Location</h3>
                     <p className="mt-1 text-base text-qasly-gray">
-                      Remote India 
+                      Remote India
                     </p>
                   </div>
                 </div>

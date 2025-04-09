@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Qasly Media - Professional Media Agency',
   description: 'Professional media agency delivering premium web development, video editing and photo editing services for brands that want to stand out.',
   icons: {
-    icon: '/logo.png',
+    icon: '/logo.jpeg',
   },
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#6366F1',
