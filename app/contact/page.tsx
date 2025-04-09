@@ -181,7 +181,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-base font-medium text-qasly-offwhite">Location</h3>
                     <p className="mt-1 text-base text-qasly-gray">
-                      123 Media Street, New York, NY 10001
+                      Remote India 
                     </p>
                   </div>
                 </div>

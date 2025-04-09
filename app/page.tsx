@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import YouTubePlaylist from '../components/YouTubePlaylist'
 
 export default function Home() {
   return (
@@ -200,65 +201,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Portfolio Section */}
-      <section id="portfolio" className="bg-qasly-dark py-20 md:py-28 border-b border-qasly-medium">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-medium tracking-tight text-qasly-offwhite sm:text-4xl">Our Portfolio</h2>
-            <p className="mt-4 text-lg leading-8 text-qasly-gray">
-              Projects that showcase our expertise and creativity
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="bg-qasly-medium overflow-hidden rounded-lg shadow-md border border-qasly-medium hover:border-qasly-primary/50 transition-colors group">
-                <div className="relative h-56 w-full overflow-hidden">
-                  <Image
-                    src={`https://placehold.co/600x400/${item % 3 === 0 ? 'dafc37' : item % 3 === 1 ? 'b7d30f' : 'e4fd6a'}/121212/png?text=Project+${item}`}
-                    alt={`Portfolio project ${item}`}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-x-4 text-xs mb-3">
-                    <span className={`rounded-full px-3 py-1 bg-qasly-dark border ${
-                      item % 3 === 0 
-                        ? 'border-qasly-primary text-qasly-primary' 
-                        : item % 3 === 1 
-                        ? 'border-qasly-primary text-qasly-primary' 
-                        : 'border-qasly-primary text-qasly-primary'
-                    }`}>
-                      {item % 3 === 0 ? 'Photo Editing' : item % 3 === 1 ? 'Web Development' : 'Video Production'}
-                    </span>
-                  </div>
-                  <h3 className="text-lg font-medium text-qasly-offwhite">
-                    {item % 3 === 0 ? 'Photo Portfolio' : item % 3 === 1 ? 'E-commerce Website' : 'Product Video'}
-                  </h3>
-                  <p className="mt-3 text-sm text-qasly-gray">
-                    {item % 3 === 0 
-                      ? "Professional photo editing for a client's marketing campaign, enhancing brand identity through visual storytelling."
-                      : item % 3 === 1 
-                      ? "Custom e-commerce solution with integrated payment systems, inventory management, and responsive design."
-                      : "Professional product promotional video highlighting key features and benefits for a marketing campaign."}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <Link 
-              href="/contact" 
-              className="inline-flex items-center rounded-md px-5 py-2.5 text-sm font-medium text-qasly-dark bg-qasly-primary border border-qasly-primary hover:bg-transparent hover:text-qasly-primary transition-colors"
-            >
-              View More Projects
-            </Link>
-          </div>
-        </div>
-      </section>
       
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-qasly-darker to-qasly-dark py-20 md:py-28">
@@ -282,6 +224,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* YouTube Playlist section */}
+      <YouTubePlaylist />
+      
       <Footer />
     </main>
   )
