@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import YouTubePlaylist from '../components/YouTubePlaylist'
-import RotatingQuotes from '../components/RotatingQuotes'
 import TechShowcase from '../components/TechShowcase'
 
 export default function Home() {
@@ -20,9 +19,6 @@ export default function Home() {
                 Creative Solutions for Your 
                 <span className="block text-qasly-primary mt-2">Digital Presence</span>
               </h1>
-              <div className="mt-6">
-                <RotatingQuotes />
-              </div>
               <p className="mt-6 text-lg leading-8 text-qasly-gray">
                 Professional media agency delivering premium web development and video editing services for brands that want to stand out.
               </p>
