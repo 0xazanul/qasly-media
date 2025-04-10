@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import YouTubePlaylist from '../components/YouTubePlaylist'
+import RotatingQuotes from '../components/RotatingQuotes'
+import TechShowcase from '../components/TechShowcase'
 
 export default function Home() {
   return (
@@ -18,6 +20,9 @@ export default function Home() {
                 Creative Solutions for Your 
                 <span className="block text-qasly-primary mt-2">Digital Presence</span>
               </h1>
+              <div className="mt-6">
+                <RotatingQuotes />
+              </div>
               <p className="mt-6 text-lg leading-8 text-qasly-gray">
                 Professional media agency delivering premium web development and video editing services for brands that want to stand out.
               </p>
@@ -34,18 +39,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="p-4 bg-qasly-medium rounded-lg">
-                <Image
-                  src="https://placehold.co/800x600/dafc37/121212/png?text=Qasly+Media"
-                  alt="Qasly Media Team Working"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-md w-full h-auto"
-                  priority
-                />
-              </div>
-              <div className="absolute -bottom-4 -right-4 h-24 w-24 bg-qasly-primary rounded-lg hidden md:block" aria-hidden="true"></div>
-              <div className="absolute -top-4 -left-4 h-16 w-16 bg-qasly-medium border border-qasly-primary/50 rounded-lg hidden md:block" aria-hidden="true"></div>
+              <TechShowcase />
             </div>
           </div>
         </div>
@@ -138,64 +132,64 @@ export default function Home() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
             {/* Wellness */}
-            <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative h-80 w-full overflow-hidden rounded-lg">
+            <div className="bg-qasly-dark p-6 rounded-lg shadow-md border border-qasly-medium">
+              <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg">
                 <Image
-                  src="https://placehold.co/800x800/dafc37/121212/png?text=Wellness"
-                  alt="Wellness Project"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  src="/wellness.jpg"
+                  alt="Wellness Logo"
+                  width={800}
+                  height={800}
+                  className="h-48 w-48 object-contain mx-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-qasly-dark/90 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-medium text-qasly-offwhite">Wellness</h3>
-                  <p className="mt-2 text-sm text-qasly-gray">
-                    A modern pharmaceutical website with an elegant design that focuses on product showcasing and user experience.
-                  </p>
-                  <div className="mt-4 flex gap-2">
-                    <span className="inline-flex items-center rounded-full bg-qasly-dark/50 px-3 py-1 text-xs text-qasly-primary border border-qasly-primary/30">Web Development</span>
-                    <span className="inline-flex items-center rounded-full bg-qasly-dark/50 px-3 py-1 text-xs text-qasly-primary border border-qasly-primary/30">UI/UX Design</span>
-                  </div>
-                  <a 
-                    href="https://wellnessazanul.netlify.app/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="mt-4 inline-flex items-center text-sm font-medium text-qasly-primary hover:text-qasly-accent"
-                  >
-                    Visit Website <span aria-hidden="true" className="ml-1">→</span>
-                  </a>
+              </div>
+              <div className="mt-4">
+                <h3 className="text-xl font-medium text-qasly-offwhite">Wellness</h3>
+                <p className="mt-2 text-sm text-qasly-gray">
+                  A modern pharmaceutical website with an elegant design that focuses on product showcasing and user experience.
+                </p>
+                <div className="mt-4 flex gap-2">
+                  <span className="inline-flex items-center rounded-full bg-qasly-dark/50 px-3 py-1 text-xs text-qasly-primary border border-qasly-primary/30">Web Development</span>
+                  <span className="inline-flex items-center rounded-full bg-qasly-dark/50 px-3 py-1 text-xs text-qasly-primary border border-qasly-primary/30">UI/UX Design</span>
                 </div>
+                <a 
+                  href="https://wellnessazanul.netlify.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="mt-4 inline-flex items-center text-sm font-medium text-qasly-primary hover:text-qasly-accent"
+                >
+                  Visit Website <span aria-hidden="true" className="ml-1">→</span>
+                </a>
               </div>
             </div>
 
             {/* Jaipuria School */}
-            <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative h-80 w-full overflow-hidden rounded-lg">
+            <div className="bg-qasly-dark p-6 rounded-lg shadow-md border border-qasly-medium">
+              <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg">
                 <Image
-                  src="https://placehold.co/800x800/dafc37/121212/png?text=Jaipuria+School"
-                  alt="Jaipuria School Nanpara Project"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  src="/jaipurialogo.jpg"
+                  alt="Seth Anandram Jaipuria School Logo"
+                  width={800}
+                  height={800}
+                  className="h-48 w-48 object-contain mx-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-qasly-dark/90 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-medium text-qasly-offwhite">Seth Anandram Jaipuria School</h3>
-                  <p className="mt-2 text-sm text-qasly-gray">
-                    An educational institution website designed to showcase their academic excellence and values.
-                  </p>
-                  <div className="mt-4 flex gap-2">
-                    <span className="inline-flex items-center rounded-full bg-qasly-dark/50 px-3 py-1 text-xs text-qasly-primary border border-qasly-primary/30">Web Development</span>
-                    <span className="inline-flex items-center rounded-full bg-qasly-dark/50 px-3 py-1 text-xs text-qasly-primary border border-qasly-primary/30">UI Design</span>
-                  </div>
-                  <a 
-                    href="https://jaipuriaschoolnanpara.netlify.app/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="mt-4 inline-flex items-center text-sm font-medium text-qasly-primary hover:text-qasly-accent"
-                  >
-                    Visit Website <span aria-hidden="true" className="ml-1">→</span>
-                  </a>
+              </div>
+              <div className="mt-4">
+                <h3 className="text-xl font-medium text-qasly-offwhite">Seth Anandram Jaipuria School</h3>
+                <p className="mt-2 text-sm text-qasly-gray">
+                  An educational institution website designed to showcase their academic excellence and values.
+                </p>
+                <div className="mt-4 flex gap-2">
+                  <span className="inline-flex items-center rounded-full bg-qasly-dark/50 px-3 py-1 text-xs text-qasly-primary border border-qasly-primary/30">Web Development</span>
+                  <span className="inline-flex items-center rounded-full bg-qasly-dark/50 px-3 py-1 text-xs text-qasly-primary border border-qasly-primary/30">UI Design</span>
                 </div>
+                <a 
+                  href="https://jaipuriaschoolnanpara.netlify.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="mt-4 inline-flex items-center text-sm font-medium text-qasly-primary hover:text-qasly-accent"
+                >
+                  Visit Website <span aria-hidden="true" className="ml-1">→</span>
+                </a>
               </div>
             </div>
           </div>
